@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>ESSECT - Accueil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <header>
+        
+        <div class="logo">
+            <img src="logo.jpg" alt="Logo ESSECT">
+        </div>
+        <nav>
+            <ul>
+                
+                <button class="login-btn" onclick="toggleLoginForm()">Login</button>
+            </div>
+            <li><a href="#programmes">Programmes</a></li>
+            <li><a href="#evenements">Événements</a></li>
+            <li><a href="#departements">Départements</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#activitées et clubs">activités</a></li>
+        </ul>
+    </nav>
+    <br><br>
+
+   
+    <div id="login-form">
+        <a href="inscription.html">login</a>
+    
+    </header>
+    <div class="notification-bar">
+        <marquee behavior="scroll" direction="left">
+            🎓 [Nouvelle] Les inscriptions pour le semestre prochain sont ouvertes ! |
+            📅 [Événement] Conférence sur l'innovation technologique le 15 décembre ! |
+            📰 [Annonce] Consultez les nouveaux emplois du temps dans la section "Programmes" !
+        </marquee>
+    </div>
+
+    <div class="actualites-bar">
+        <div class="actualite-item">
+            <div class="badge-nouveau">Nouveau</div>
+            <img src="images/actu1.jpg" alt="Actualité 1" class="actualite-image">
+            <h3>Conférence Technologique</h3>
+        </div>
+        <div class="actualite-item">
+            <img src="images/actu2.jpg" alt="Actualité 2" class="actualite-image">
+            <h3>Inscription Semestre 2024</h3>
+        </div>
+        <div class="actualite-item">
+            <div class="badge-nouveau">Nouveau</div>
+            <img src="images/actu3.jpg" alt="Actualité 3" class="actualite-image">
+            <h3>Journée Portes Ouvertes</h3>
+        </div>
+        <div class="actualite-item">
+            <div class="badge-nouveau">Nouveau</div>
+            <img src="images/actu3.jpg" alt="Actualité 3" class="actualite-image">
+            <h3>Journée Portes Ouvertes</h3>
+        </div>
+        <div class="actualite-item">
+            <div class="badge-nouveau">Nouveau</div>
+            <img src="images/actu3.jpg" alt="Actualité 3" class="actualite-image">
+            <h3>Journée Portes Ouvertes</h3>
+        </div>
+    </div>
+    
+
+   
+
+    
+    <section id="intro">
+        <h1>Bienvenue à l'ESSECT</h1>
+        <p>
+            L'École Supérieure des Sciences Économiques et Commerciales de Tunis (ESSECT) 
+            est un établissement de renom qui offre des formations variées dans les domaines 
+            de la gestion, de l'économie et du commerce. 
+        </p>
+        <p>
+            Depuis sa création, l'ESSECT s'engage à fournir une éducation de qualité et 
+            à préparer les étudiants à relever les défis du marché mondial.
+        </p>
+    </section>
+
+    
+    <section id="programmes">
+        <h2>Nos Programmes</h2>
+        <p>
+            Découvrez les <a href="programmes.html">programmes académiques</a> offerts, 
+            incluant les licences, masters et doctorats.
+        </p>
+    </section>
+
+    <section id="evenements">
+        <h2>Événements</h2>
+        <p>
+            Consultez notre <a href="evenements .html">calendrier des événements</a> pour rester 
+            informé des séminaires, conférences et ateliers organisés par l'ESSECT.
+        </p>
+    </section>
+
+  
+    <section id="departements">
+        <h2>Départements Académiques</h2>
+        <ul>
+            <li><a href="https://www.essect.tn/department/management" target="_blank">Département de Gestion</a></li>
+            <li><a href="https://www.essect.tn/department/finance" target="_blank">Département de Finance</a></li>
+            <li><a href="https://www.essect.tn/department/economics" target="_blank">Département d'Économie</a></li>
+        </ul>
+    </section>
+
+    <section class="activitées">
+        <h2>Activités et Clubs Étudiants</h2>
+        <p>Participez à la vie étudiante en rejoignant des clubs thématiques ou en prenant part aux divers événements organisés tout au long de l'année.</p>
+        <ul>
+            <li><strong>Clubs :</strong> Informatique, Débat, Culture et Arts.</li>
+            <li><strong>Événements :</strong> Tournois sportifs, journées culturelles, ateliers de développement personnel.</li>
+        </ul>
+        <a href="activitées.html" class="button">Découvrir les activités et clubs</a>
+    </section>
+
+
+    
+    <section id="contact">
+        <h2>Contactez-nous et discussions</h2>
+        <p>
+            Vous avez des questions ? voulez vous communiquer ou contactez les autres etudiants;  <a href="contact.html">Contactez-nous</a> pour obtenir plus 
+            d'informations sur nos programmes et services.
+            
+        </p>
+    </section>
+
+    
+    <footer>
+        <p>&copy; 2024 ESSECT. Tous droits réservés.</p>
+    </footer>
+    
+    <script>
+        function toggleLoginForm() {
+    const form = document.getElementById('login-form');
+    form.style.display = form.style.display === 'none' || form.style.display === '' ? 'block' : 'none';
+}
+
+
+function submitLoginForm() {
+    const nom = document.getElementById('nom').value;
+    const prenom = document.getElementById('prenom').value;
+    const cin = document.getElementById('cin').value;
+    const email = document.getElementById('email').value;
+
+    if (nom && prenom && cin && email) {
+        alert(`Merci, ${prenom} ${nom}! Votre CIN est ${cin} et votre email est ${email}.`);
+        toggleLoginForm();
+    } else {
+        alert('Veuillez remplir tous les champs.');
+    }
+}
+</script>
+</body>
+</html>

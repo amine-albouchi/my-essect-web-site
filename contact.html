@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Contact et Forum - ESSECT</title>
+    <link rel="stylesheet" href="conn.css">
+</head>
+<body>
+    <header>
+        <a href="javascript:history.back()" class="back-arrow">
+            &#8592; Retour
+        </a>
+        <div class="logo">
+            <img src="logo.jpg" alt="Logo ESSECT">
+        <h1>Contactez-Nous et Discutez</h1>
+        <p>Posez vos questions, fournissez vos commentaires ou participez aux discussions avec le personnel et les étudiants.</p>
+    </header>
+
+    
+    <section class="contact-form">
+        <h2>Contactez-Nous</h2>
+        <form action="#" method="post">
+            <label for="name">Nom et Prénom :</label>
+            <input type="text" id="name" name="name" placeholder="Entrez votre nom complet" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="5" placeholder="Écrivez votre message ici" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    
+    <section class="forum">
+        
+        <form action="#" method="post" class="forum-form">
+            <label for="new-topic">communiquer :</label>
+            <textarea id="new-topic" name="new-topic" rows="3" placeholder="Écrivez votre question ou commentaire ici" required></textarea>
+            <button type="submit">Publier</button>
+        </form>
+    </section>
+
+    
+    <footer>
+        <p> 2024 ESSECT. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

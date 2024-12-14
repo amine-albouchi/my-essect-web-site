@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Activités et Clubs - ESSECT</title>
+    <link rel="stylesheet" href="act.css">
+</head>
+<body>
+    <header>
+        <a href="javascript:history.back()" class="back-arrow">
+            &#8592; Retour
+        </a>
+        <div class="logo">
+            <img src="logo.jpg" alt="Logo ESSECT">
+        <h1>Activités et Clubs Étudiants</h1>
+        <p>Découvrez nos clubs étudiants, participez aux activités et développez vos talents.</p>
+        
+    </header>
+
+    <section class="clubs">
+        <h2>Nos Clubs Étudiants</h2>
+        <div class="club">
+            <h3>Info Lab</h3>
+            <p>Formation et apprentissage technologique,  Innovation et projets collaboratifs, Partage des connaissances,  Réseau et opportunités professionnelles  </p>
+            <a href="">Voir plus de détails sur le club.</a>
+        </div>
+        <div class="club">
+            <h3>Enactus</h3>
+            <p> Encourager l'entrepreneuriat social, Développer les compétences en leadership, Créer un impact positif, Favoriser les partenariats professionnels .</p>
+            <a href="https://enactus.org/">Voir plus de détails sur le club.</a>
+        </div>
+        
+    </section>
+        <section class="activities">
+        <h2>Activités Étudiantes</h2>
+        <ul>
+            <li><strong>Tournoi de football :</strong> Organisé chaque semestre pour encourager l'esprit sportif.</li>
+            <li><strong>Journée de la culture :</strong> Une célébration des diverses traditions et cultures de nos étudiants.</li>
+            <li><strong>Ateliers de développement personnel :</strong> Séances de leadership, gestion du temps, et bien plus encore.</li>
+        </ul>
+    </section>
+
+    <section class="join">
+        <h2>Rejoignez un Club ou Proposez une Activité</h2>
+        <form action="#" method="post">
+            <label for="name">Nom et Prénom :</label>
+            <input type="text" id="name" name="name" placeholder="Votre nom complet" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" placeholder="Votre email" required>
+
+            <label for="club">Club ou Activité :</label>
+            <select id="club" name="club" required>
+                <option value="informatique">Info Lab</option>
+                <option value="debat">Enactus</option>
+                <option value="nouvelle-activite">Proposer une nouvelle activité</option>
+            </select>
+
+            <label for="message">Message ou Suggestion :</label>
+            <textarea id="message" name="message" rows="4" placeholder="Expliquez vos motivations ou proposez une activité"></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <p> 2024 ESSECT. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
